@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+  <title> Shinigami </title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/lightcase.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./jQuery/jquery.events.touch.js"></script>
+
+
+  <script type="text/javascript" src="./js/lightcase.js" ></script>
+  <script type="text/javascript" src="./js/app.js" ></script>
+
+</head>
+
+<body >
+  <div class="full-view">
+    <header>
+      <frameset height="100%" ><img class="img-responsive p-0" src="img/sfondologo.jpg"/></frameset>
+
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="843.13">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html">Home</a></li>
+
+            <li class="active"><a href="gioco.html">Gioco</a></li>
+
+
+          </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    </header>
+
+
+    <div class="container-fluid">
+      <div class="row">
+ <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#preparazione">
+          <div class="card-header">
+            <h3 class="font-title resize">Preparazione</h3>
+            <h3 class="font">Metti in ordine tutto per cominciare la partita!</h3>
+          </div>
+
+          </div>
+          </div>
+
+          <div id="preparazione" class="collapse lamincard">
+          <div class="row">
+          <div class="font col-xs-12 col-md-8">
+          <h1 class="font-title">Consegna del Death Note</h1>
+<p> Ad inizio partita, vanno creati tanti mazzetti quanti sono
+i giocatori, ogni mazzetto deve contenere:<ul>
+<li>Una tessera DN (coperta)</li>
+<li>Due carte DN (coperte)</li>
+</ul></p>
+</div>
+<div class="col-md-4"><img class="img-responsive" src="img/sfondologo.jpg"/></div>
+</div>
+<div class="row">
+<div class="font col-xs-12 col-md-8">
+<p>
+<b>N.B: Il mazzetto che contiene la Tessera DN piena
+deve contenere anche la Carta DN piena. <br>
+Deve esserci solo un mazzetto del genere in gioco a partita </b><br></p>
+<p>Dopo aver mescolato i mazzetti, ogni giocatore ne
+riceve uno, e decide se depositare la propria Tessera DN
+sullo slot Personale o sullo slot Appartamento della propria
+Scheda del Giocatore.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="font col-xs-12 col-md-6">
+          <h1 class="font-title">Consegna inventari</h1>
+          <p>A inizio partita, ogni giocatore riceve inoltre:<ul>
+<li>La Scheda del Giocatore</li>
+<li>La Scheda di Classe: Cittadino</li>
+<li>Tutte le Carte Nome del proprio colore</li>
+<li>La Tessera Nome del proprio colore</li>
+<li>La pedina del proprio colore</li>
+<li>Una Carta Obiettivo pescata a caso tra le 8 disponibili</li>
+</ul>
+</p>
+<p>
+<b>N.B: la Carta Obiettivo Light deve essere in gioco durante ogni partita</b>
+</p>
+</div>
+<div class="col-md-6"><img class="img-responsive pos-right" src="img/SchedadelGiocatorePiena.png"/></div>
+</div>
+</div>
+
+  <div class="row">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#turno">
+          <div class="card-header">
+            <h3 class="font-title resize">Turno</h3>
+            <h3 class="font">Come si svolge il turno e il turno della morte</h3>
+          </div>
+          </div>
+
+          </div>
+           <div id="turno" class="collapse lamincard">
+           <h1 class="font-title">Turno standart</h1>
+           <div class="font">
+           <p>Ogni giocatore, durante il proprio turno:<ul>
+
+<li>Lancia il dado e sposta la sua pedina per un numero di
+caselle pari o inferiore al risultato.Non può evitare di
+spostare la propria pedina, anche nel caso esca 1 come
+risultato.</li><br>
+
+<li>Può compiere azioni di classe, cambiare classe, comprare
+oggetti, depositare e/o ritirare oggetti dalle slot a cui ha
+accesso,</li></ul>
+
+<h1 class="font-title">Turno della morte</h1> (solo dal terzo giro in poi)
+<p class="font">
+Ogni fine turno standard vi è il giro della morte,
+tutti i giocatori consegnano una Carta DN ed una Carta Nome
+al giocatore che ha appena concluso il turno standard.<br><br>
+
+Il giocatore controlla tutte le carte ricevute e le riconsegna
+ai proprietari originali, SOLO allora dichiarerà se ci sono stati
+cambiamenti seguendo questi tre casi :<ol><br>
+
+<li style="color:red"><span style="color:black"> Se il giocatore riceve solo carte DN vuote dichiara
+il turno della morte finito.</span></li><br>
+<li style="color:red"><span style="color:black"> Se il giocatore riceve la Carta DN piena accompagnata
+da una Carta Nome corrispondente alla propria Tessera Nome
+attuale, a fine turno il giocatore si dichiara eliminato, perde
+tutti gli oggetti di ogni inventario, ricomincia dalla casella
+START e cambia nome.</span></li><br>
+<li style="color:red"><span style="color:black">Se il giocatore riceve la Carta DN piena accompagnata da
+una Carta Nome che non corrisponde alla propria Tessera
+Nome attuale, mostra a tutti i giocatori l'incongruenza e cambia Tessera Nome,tutte le
+Carte DN e le Tessere DN vengono rimescolate e ridistribuite come ad inizio
+partita.</span></li>
+</ol>
+</p>
+</div>
+  </div>
+
+
+  <div class="row">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#tessere">
+          <div class="card-header">
+            <h3 class="font-title resize">Tessere</h3>
+            <h3 class="font">i 5 tipi di Tessere del gioco</h3>
+          </div>
+          </div>
+          </div>
+
+
+
+
+
+          <div id="tessere" class="collapse lamincard">
+
+    <div class="row">
+
+    <div class="col-xs-12 col-md-4 p-25">
+    <h1 class="font-title text-center p-25">Tessere Oggetto</h1>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+    <img class="img-responsive" src="img/Mela.jpg"/>
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 p-25">
+      <h1 class="font-title text-center p-25">Tessere Denaro</h1>
+       <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+      <img class="img-responsive" src="img/Denaro.jpg"/>
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 p-25">
+      <h1 class="font-title text-center p-25">Tessere DN</h1>
+       <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+      <img class="img-responsive" src="img/DeathNote.jpg"/>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+
+    <div class="col-xs-12 col-md-4 col-md-offset-1 p-25">
+    <h1 class="font-title text-center p-20">Tessere Nome</h1>
+     <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+   <img class="img-responsive" src="img/TesseraNomeFronteAzzurro.jpg"/>
+   </div>
+   </div>
+
+   <div class="col-xs-12 col-md-4 col-md-offset-2 p-25">
+   <h1 class="font-title text-center p-20">Tessere Morte</h1>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+   <img class="img-responsive" src="img/TesseraMorteFronte.jpg"/>
+   </div>
+   </div>
+
+   </div>
+   </div>
+
+
+
+
+           <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1  card  text-center" data-toggle="collapse" data-target="#mercati">
+          <div class="card-header">
+            <h3 class="font-title resize">Mercati</h3>
+          <h3 class="font">Tutti gli oggetti acquistabili in partita</h3>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div id="mercati" class="collapse lamincard">
+
+        <div class="row">
+
+         <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Mercato</h1>
+        </div>
+
+        <div class="col-xs-12 col-md-4 b-20">
+        <h1 class="font-title text-center">Mela</h1>
+         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Mela.jpg"/>
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Testamento</h1>
+         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Testamento.jpg"/>
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Cassaforte</h1>
+         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Cassaforte.jpg"/>
+        </div>
+        </div>
+        </div>
+
+        <div class="row">
+
+        <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Ghetto</h1>
+        </div>
+
+
+        <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Grimaldello</h1>
+         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Grimaldello.jpg"/>
+       
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Esplosivo</h1>
+        <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Esplosivo.jpg"/>
+        
+        </div>
+        </div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Badge Falsificato</h1>
+        <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <img class="img-responsive" src="img/Badge.jpg"/>
+        </div>
+        </div>
+
+        </div>
+
+          <p class=" font text-center card card-rounded">
+          Queste Tessere oggetto sono disponibili SOLO nella Casella Ghetto!<br>
+          Solo chi possiede la Scheda di Classe Criminale può utilizzare questo tipo di Tessere Oggetto e accedere
+        alla Casella Ghetto, nonostante ciò è consentito mantenere queste Tessere Oggetto anche dopo il cambio della propria Scheda di Classe.</p>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="row">
+
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#carte">
+          <div class="card-header">
+            <h3 class="font-title resize">Carte</h3>
+            <h3 class="font">Carte Obiettivo e Carte del Turno della Morte!</h3>
+          </div>
+          </div>
+          </div>
+          <div id="carte" class="collapse lamincard">
+              <div class="row">
+        <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center m-0">Carte del Turno della Morte</h1>
+        </div>
+
+        </div>
+          <div class="row">
+          <div class="col-xs-12 col-md-4 col-md-offset-1">
+          <h1 class="font-title b-size p-25">Carte Nome</h1>
+           <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+          <img class="img-responsive" src="img/CartanomeAzzurra.jpg"/>
+          </div>
+          </div>
+
+               <div class="col-xs-12 col-md-4 col-md-offset-2">
+          <h1 class="font-title b-size p-25">Carte DN</h1>
+           <div class="col-xs-12 col-md-10 p-25">
+          <img class="img-responsive" src="img/CartaDNRetro.jpg"/>
+          </div>
+          </div>
+          </div>
+
+          <div class="row">
+        <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Carte Obiettivo</h1>
+        </div>
+        <div class="row cover">
+        <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Light</h1>
+        <img class="img-responsive" src="img/ObiettivoLight.jpg"/>
+        </div>
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Misa</h1>
+        <img class="img-responsive" src="img/ObiettivoMIsa.jpg"/>
+        </div>
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Mikami</h1>
+        <img class="img-responsive" src="img/ObiettivoMikami.jpg"/>
+        </div>
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Takada</h1>
+        <img class="img-responsive" src="img/ObiettivoTakada.jpg"/>
+        </div>
+        </div>
+
+              <div class="row">
+        <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">L</h1>
+        <img class="img-responsive" src="img/ObiettivoElle.jpg"/>
+        </div>
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">M</h1>
+        <img class="img-responsive" src="img/ObiettivoMello.jpg"/>
+        </div>
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">N</h1>
+        <a href="img/ObiettivoNear.jpg" data-rel="lightcase"><img class="img-responsive" src="img/ObiettivoNear.jpg"/></a>
+        </div>
+         <div class="col-xs-12 col-md-3 p-25">
+        <h1 class="font-title text-center">Higuchi</h1>
+        <img class="img-responsive" src="img/ObiettivoHiguchi.jpg"/>
+        </div>
+        </div>
+
+
+
+        </div>
+
+
+  </div>
+
+
+  <div class="row">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card bottom-card text-center" data-toggle="collapse" data-target=#schede>
+          <div class="card-header">
+            <h3 class="font-title resize">Schede</h3>
+            <h3 class="font">Scheda di Classe e Schede del Giocatore</h3>
+          </div>
+          </div>
+          </div>
+
+
+            <div id="schede" class="collapse lamincard">
+            <div class="row">
+             <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Schede di Classe</h1>
+        </div>
+
+               <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Cittadino</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive" src="img/SchedaCittadino.jpg"/>
+        </div>
+</div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Investigatore</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive" src="img/SchedaInvestigatore.jpg"/>
+        </div>
+</div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Criminale</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive" src="img/SchedaCriminale.jpg"/>
+        </div>
+</div>
+        </div>
+                <div class="row">
+               <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Magistrato</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive" src="img/SchedaMagistrato.jpg"/>
+        </div>
+</div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Impiegato</h1>
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive" src="img/SchedaImpiegato.jpg"/>
+        </div>
+</div>
+
+          <div class="col-xs-12 col-md-4">
+        <h1 class="font-title text-center">Studente</h1>
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img class="img-responsive" src="img/SchedaStudente.jpg"/>
+        </div>
+        </div>
+</div>
+  <div class="row">
+             <div class="col-xs-12 card card-rounded">
+        <h1 class="font-title resize text-center">Scheda del Giocatore</h1>
+        </div>
+        <img class="img-responsive" src="img/SchedadelGiocatore.jpg"/>
+
+      </div>
+  </div>
+
+           <div class="row" , id="footer">
+      <div class="col-md-6 col-md-offset-3 ">
+        <ul class="list-inline text-center" , id="footerShareList">
+          <li>
+            <a id="twitter">
+              <i class="fa fa-twitter">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a id="facebook">
+              <i class="fa fa-facebook">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a id="google-plus">
+              <i class="fa fa-google-plus">
+              </i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-xs-12" , id="footerInfo">
+        <div class="text-center ">
+          <p> &copy 2003 SHUEISHA.
+           All rights reserved Death Note.
+           All logos characters names and distinctive likeness
+           thereof are trademarks of SHUEISHA<br>
+           Site created by Giuseppe Manfredi and based on Bootstrap  </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
