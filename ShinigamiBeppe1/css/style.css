@@ -130,6 +130,7 @@ border: 0px solid transparent;
  .card-header {
    font-size: 26px;
    padding-bottom: 20px
+   margin-top:100px;
  }
  .card-rounded {
    border-radius: 50px;
@@ -222,4 +223,29 @@ img, .img-responsive, .thumbnail a > img, .thumbnail > img{
 }
 .p-100{
    padding:100px;
+}
+.home-card{
+   padding: 25px;
+   padding-left: 50px;
+   padding-right:50px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   -webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+   box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+   display: inline-block;
+   line-height: 1.75;
+   background-image: url(./images/blackpage.jpg);
+   background-size: 100% 100%;
+   background-repeat:no-repeat; 
+   background-image: center;
+}
+.m-top-85{
+   margin-top: 85px
+}
+.white{
+   color:white;
+}
+.justified{
+   justify-content: center;
 }
