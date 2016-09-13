@@ -5,6 +5,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
   <title> Shinigami </title>
+  <link rel="shortcut icon" href="favicon.ico"/> 
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="./css/style.css" rel="stylesheet" type="text/css">
@@ -14,9 +15,8 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="./jQuery/jquery.events.touch.js"></script>
-
-
   <script type="text/javascript" src="./js/lightcase.js" ></script>
   <script type="text/javascript" src="./js/app.js" ></script>
 
@@ -43,7 +43,13 @@
           <ul class="nav navbar-nav">
             <li><a href="home.html">Home</a></li>
 
-            <li class="active"><a href="gioco.html">Gioco</a></li>
+            <!-- <li class="active"><a href="gioco.html">Gioco</a></li> -->
+            <li><a href="#card-preparazione">Preparazione</a></li>
+            <li><a href="#card-turno">Turno</a></li>
+            <li><a href="#card-tessere">Tessere</a></li>
+            <li><a href="#card-mercati">Mercati</a></li>
+            <li><a href="#card-carte">Carte</a></li>
+            <li><a href="#card-schede">Schede</a></li>
 
 
           </ul>
@@ -58,7 +64,7 @@
 
     <div class="container-fluid">
       <div class="row">
- <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#preparazione">
+ <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#preparazione" id="card-preparazione">
           <div class="card-header">
             <h3 class="font-title resize">Preparazione</h3>
             <h3 class="font">Metti in ordine tutto per cominciare la partita!</h3>
@@ -113,7 +119,7 @@ Scheda del Giocatore.
 </div>
 
   <div class="row">
-        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#turno">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#turno" id="card-turno">
           <div class="card-header">
             <h3 class="font-title resize">Turno</h3>
             <h3 class="font">Come si svolge il turno e il turno della morte</h3>
@@ -164,7 +170,7 @@ partita.</span></li>
 
 
   <div class="row">
-        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#tessere">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#tessere" id="card-tessere">
           <div class="card-header">
             <h3 class="font-title resize">Tessere</h3>
             <h3 class="font">i 5 tipi di Tessere del gioco</h3>
@@ -226,7 +232,7 @@ partita.</span></li>
 
 
            <div class="row">
-        <div class="col-xs-12 col-md-10 col-md-offset-1  card  text-center" data-toggle="collapse" data-target="#mercati">
+        <div class="col-xs-12 col-md-10 col-md-offset-1  card  text-center" data-toggle="collapse" data-target="#mercati" id="card-mercati">
           <div class="card-header">
             <h3 class="font-title resize">Mercati</h3>
           <h3 class="font">Tutti gli oggetti acquistabili in partita</h3>
@@ -247,21 +253,21 @@ partita.</span></li>
 
         <div class="col-xs-12 col-md-4 b-20">
         <h1 class="font-title text-center">Mela</h1>
-         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+         <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
         <img class="img-responsive" src="img/Mela.jpg"/>
         </div>
         </div>
 
           <div class="col-xs-12 col-md-4">
         <h1 class="font-title text-center">Testamento</h1>
-         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+         <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1 p-25">
         <img class="img-responsive" src="img/Testamento.jpg"/>
         </div>
         </div>
 
           <div class="col-xs-12 col-md-4">
         <h1 class="font-title text-center">Cassaforte</h1>
-         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+         <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
         <img class="img-responsive" src="img/Cassaforte.jpg"/>
         </div>
         </div>
@@ -276,7 +282,7 @@ partita.</span></li>
 
         <div class="col-xs-12 col-md-4">
         <h1 class="font-title text-center">Grimaldello</h1>
-         <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+         <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
         <img class="img-responsive" src="img/Grimaldello.jpg"/>
        
         </div>
@@ -284,7 +290,7 @@ partita.</span></li>
 
           <div class="col-xs-12 col-md-4">
         <h1 class="font-title text-center">Esplosivo</h1>
-        <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
         <img class="img-responsive" src="img/Esplosivo.jpg"/>
         
         </div>
@@ -292,7 +298,7 @@ partita.</span></li>
 
           <div class="col-xs-12 col-md-4">
         <h1 class="font-title text-center">Badge Falsificato</h1>
-        <div class="col-xs-12 col-md-10 col-md-offset-1 p-25">
+        <div class="col-xs-8 col-xs-offset-2  col-md-10 col-md-offset-1 p-25">
         <img class="img-responsive" src="img/Badge.jpg"/>
         </div>
         </div>
@@ -316,7 +322,7 @@ partita.</span></li>
 
   <div class="row">
 
-        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#carte">
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card  text-center" data-toggle="collapse" data-target="#carte" id="card-carte">
           <div class="card-header">
             <h3 class="font-title resize">Carte</h3>
             <h3 class="font">Carte Obiettivo e Carte del Turno della Morte!</h3>
@@ -397,7 +403,7 @@ partita.</span></li>
 
 
   <div class="row">
-        <div class="col-xs-12  col-md-10 col-md-offset-1 card bottom-card text-center" data-toggle="collapse" data-target=#schede>
+        <div class="col-xs-12  col-md-10 col-md-offset-1 card bottom-card text-center" data-toggle="collapse" data-target=#schede id="card-schede">
           <div class="card-header">
             <h3 class="font-title resize">Schede</h3>
             <h3 class="font">Scheda di Classe e Schede del Giocatore</h3>
@@ -468,19 +474,19 @@ partita.</span></li>
       <div class="col-md-6 col-md-offset-3 ">
         <ul class="list-inline text-center" , id="footerShareList">
           <li>
-            <a id="twitter">
+            <a id="twitter" href="https://twitter.com/share?url=https://www.shinigamiboardgame.com; text=Nice_Death_Note_based game_over_here; hashtags=Shinigami">
               <i class="fa fa-twitter">
               </i>
             </a>
           </li>
           <li>
-            <a id="facebook">
+            <a id="facebook" href="http://www.facebook.com/sharer.php?u=https://www.shinigamiboardgame.com">
               <i class="fa fa-facebook">
               </i>
             </a>
           </li>
           <li>
-            <a id="google-plus">
+            <a id="google-plus" href="https://plus.google.com/share?url=https://www.shinigamiboardgame.com" target="_blank">
               <i class="fa fa-google-plus">
               </i>
             </a>

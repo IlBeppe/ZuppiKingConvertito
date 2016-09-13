@@ -20,6 +20,15 @@ text-rendering: optimizeLegibility;
 text-rendering: geometricPrecision;
 text-rendering: inherit;
  }
+ @font-face{
+   font-family: OLDENGL ;
+   src:url(./font/OLDENGL.ttf);
+text-rendering: auto;
+text-rendering: optimizeSpeed;
+text-rendering: optimizeLegibility;
+text-rendering: geometricPrecision;
+text-rendering: inherit;
+ }
  html, body {
    height: 100%;
    width:100%;
@@ -39,6 +48,7 @@ text-rendering: inherit;
 }
 .font-title{
    font-family: MATURASC;
+   font-size: 5rem;
 }
  .custom-font{
    font-family: DeathNote;
@@ -79,7 +89,10 @@ padding:8px 8px;
 border-radius: 50px;
 border: 0px solid transparent;
 }
-
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px; 
+ }
  #footer {
    background-color: #BFB7B0;
  }
@@ -138,9 +151,14 @@ border: 0px solid transparent;
    margin-top:60px;
  }
  /* utilities */
+.lettera{
+   font-family: OLDENGL ;
+   font-size : 10rem;
+}
 
 .small-img {
-  max-height: 200px;
+  max-height: 12.500em;
+  max-width: 12.500em;
 }
 
 .text-align-start {
@@ -225,6 +243,8 @@ img, .img-responsive, .thumbnail a > img, .thumbnail > img{
    padding:100px;
 }
 .home-card{
+   width: 50.000em;
+   height: 62.500em;
    padding: 25px;
    padding-left: 50px;
    padding-right:50px;
@@ -235,17 +255,55 @@ img, .img-responsive, .thumbnail a > img, .thumbnail > img{
    box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
    display: inline-block;
    line-height: 1.75;
-   background-image: url(./images/blackpage.jpg);
-   background-size: 100% 100%;
-   background-repeat:no-repeat; 
-   background-image: center;
+     background-image: url(./images/LongBlackPage.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+}  
+.prl{
+   padding-right: 60px;
+   padding-left: 60px;
+}
+.m-top-20{
+   margin-top: 20px;
 }
 .m-top-85{
-   margin-top: 85px
+   margin-top: 85px;
+}
+.m-top-125{
+   margin-top: 125px;
+}
+.m-bottom-100{
+   margin-bottom: 100px;
 }
 .white{
    color:white;
 }
 .justified{
    justify-content: center;
+}
+@media screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px){
+   .home-card  {
+   width: 100%;
+   height: 60%;
+   padding: 25px;
+   padding-left: 50px;
+   padding-right:50px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   -webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+   box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+   display: inline-block;
+   line-height: 1.75;
+   background: #EBF0F2;
+}  
+   .white{
+      color: black;
+   }
+   .prl{
+      padding-left: 20px;
+      padding-right: 20px;
+   }
 }
